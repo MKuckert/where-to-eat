@@ -1,5 +1,10 @@
 <?php
-mt_srand(round(time()/100000)); // Sollte für unsere Zwecke reichen ;)
+$date=date_create();
+$date->setTime(0,0,0);
+$seed=$date->getTimestamp();
+echo $seed;
+mt_srand($seed);
+
 $dinnerChances=array(
 	'Dönermann',
 	'Hallo Pizza',
