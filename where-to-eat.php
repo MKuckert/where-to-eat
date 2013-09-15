@@ -1,5 +1,5 @@
 <?php
-mt_srand(round(time()/100000));
+mt_srand(round(time()/100000)); // Sollte für unsere Zwecke reichen ;)
 $dinnerChances=array(
 	'Dönermann',
 	'Hallo Pizza',
