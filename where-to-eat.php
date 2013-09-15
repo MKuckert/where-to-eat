@@ -1,4 +1,5 @@
 <?php
+mt_srand(round(time()/100000));
 $dinnerChances=array(
 	'Dönermann',
 	'Hallo Pizza',
@@ -6,12 +7,13 @@ $dinnerChances=array(
 	'Chinamann',
 	'Edeka'
 );
-$change=$dinnerChances[array_rand($dinnerChances)];
+$dice=mt_rand()%count($dinnerChances);
+$change=$dinnerChances[$dice];
 ?><!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<title>Where to eat?</title>
+		<title>Where dem food at?</title>
 		<style>
 body {
 	text-align: center;
