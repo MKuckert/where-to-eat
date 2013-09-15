@@ -2,7 +2,6 @@
 $date=date_create();
 $date->setTime(0,0,0);
 $seed=$date->getTimestamp();
-echo $seed;
 mt_srand($seed);
 
 $dinnerChances=array(
