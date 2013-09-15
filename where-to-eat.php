@@ -23,7 +23,7 @@ $change=$dinnerChances[$dice];
 	</head>
 
 	<body class="bg-type1">
-	<div class="bg-type2 basicscreen font-type1 text-space">
+	<div id="original" class="bg-type2 basicscreen font-type1 text-space">
 	    <div class="txt-header">
 		<ul class="txt-header-list">
 		    <li>**** COMMODORE 64 BASIC V2 ****</li>
@@ -37,8 +37,11 @@ $change=$dinnerChances[$dice];
 		READY.<br>
 		RUN<br>
 		<br>
-		C64 SAYS: GOTO <?php echo $change; ?>
-		
+		TODAYS PLACE OF HUNGER'S FULFILLMENT SHALL BE<br>
+		<?php echo $change; ?><br>	
+		<br>
+		<br>
+		READY.<br>
 	    </div>
         <img src="prompt.gif">
 	</div>
