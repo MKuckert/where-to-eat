@@ -8,7 +8,6 @@ $dinnerChances=array(
 	'Doenermann',
 	'Hallo Pizza',
 	'Subway',
-	'Chinamann',
 	'Edeka'
 );
 $dice=mt_rand()%count($dinnerChances);
